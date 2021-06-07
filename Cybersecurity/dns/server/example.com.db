@@ -1,0 +1,15 @@
+$TTL 3D ; default expiration time of all resource records without
+		: 	their own TTL
+@ 		IN 		SOA 	ns.example.com. admin.example.com. (
+		1 				; Serial
+		8H 				; Refresh
+		2H 				; Retry
+		4W 				; Expire
+		1D ) 			; Minimum
+@ 		IN 		NS 		ns.example.com. 		;Address of nameserver
+@ 		IN 		MX 		10 mail.example.com. 	;Primary Mail Exchanger
+www 	IN 		A 		192.168.0.101 	;Address of www.example.com
+mail 	IN 		A 		192.168.0.102 	;Address of mail.example.com
+ns 		IN 		A 		192.168.0.10 	;Address of ns.example.com
+*.example.com. IN A 	192.168.0.100 	;Address for other URL in
+; the example.com domain
